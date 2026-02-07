@@ -8,9 +8,10 @@ public class Account {
     public Account (int pin){
         this.pin = pin;
     }
-    private boolean verifyPin(int pin){
+    private boolean verifyPin(int pin) {
         return this.pin==pin;
     }
+
     public void deposit(int amount){
         if(amount > 0) {
             balance = balance + amount;
